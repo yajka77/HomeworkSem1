@@ -4,44 +4,57 @@
 // a = -9 b = -3 -> max = -3
 
 
-Console.WriteLine("Введите число");
-int number1 = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("Введите число");
-int number2 = Convert.ToInt32(Console.ReadLine());
-
-
-if(number2 > number1)
-{
-    Console.WriteLine(number2 + " больше " + number1);
-}
-else
-{
-    Console.WriteLine(number1 + " больше " + number2);
-}
-
-// Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
-// 2, 3, 7 -> 7
-// 44 5 78 -> 78
-// 22 3 9 -> 22
-
 // Console.WriteLine("Введите число");
 // int number1 = Convert.ToInt32(Console.ReadLine());
 
 // Console.WriteLine("Введите число");
 // int number2 = Convert.ToInt32(Console.ReadLine());
 
-// Console.WriteLine("Введите число");
-// int number3 = Convert.ToInt32(Console.ReadLine());
-
-// int max = number1;
 
 // if(number2 > number1)
 // {
-//     Console.WriteLine(number2 == max);
-//     max = number2;
+//     Console.WriteLine(number2 + " больше " + number1);
 // }
-// else 
+// else
+// {
+//     Console.WriteLine(number1 + " больше " + number2);
+// }
+
+
+
+
+// Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+// 2, 3, 7 -> 7
+// 44 5 78 -> 78
+// 22 3 9 -> 22
+
+Console.WriteLine("Введите число");
+int number1 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите число");
+int number2 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите число");
+int number3 = Convert.ToInt32(Console.ReadLine());
+
+int max = number1;
+
+int count = 0;
+
+while(count < 3)
+{
+    if(number2 > max)
+    {
+    max = number2;
+    }
+    else if(number3 > max)
+    {
+    max = number3;
+    }
+    count ++;
+}
+Console.WriteLine(max);
+
 
 // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 // 4 -> да
