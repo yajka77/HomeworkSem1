@@ -1,0 +1,15 @@
+C:\Users\Александр\OneDrive\Рабочий стол\C#Sem\HomeworkSem1\obj\Debug\net6.0\HomeworkSem1.csproj.AssemblyReference.cache
+C:\Users\Александр\OneDrive\Рабочий стол\C#Sem\HomeworkSem1\obj\Debug\net6.0\HomeworkSem1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Александр\OneDrive\Рабочий стол\C#Sem\HomeworkSem1\obj\Debug\net6.0\HomeworkSem1.AssemblyInfoInputs.cache
+C:\Users\Александр\OneDrive\Рабочий стол\C#Sem\HomeworkSem1\obj\Debug\net6.0\HomeworkSem1.AssemblyInfo.cs
+C:\Users\Александр\OneDrive\Рабочий стол\C#Sem\HomeworkSem1\obj\Debug\net6.0\HomeworkSem1.csproj.CoreCompileInputs.cache
+C:\Users\Александр\OneDrive\Рабочий стол\C#Sem\HomeworkSem1\bin\Debug\net6.0\HomeworkSem1.exe
+C:\Users\Александр\OneDrive\Рабочий стол\C#Sem\HomeworkSem1\bin\Debug\net6.0\HomeworkSem1.deps.json
+C:\Users\Александр\OneDrive\Рабочий стол\C#Sem\HomeworkSem1\bin\Debug\net6.0\HomeworkSem1.runtimeconfig.json
+C:\Users\Александр\OneDrive\Рабочий стол\C#Sem\HomeworkSem1\bin\Debug\net6.0\HomeworkSem1.dll
+C:\Users\Александр\OneDrive\Рабочий стол\C#Sem\HomeworkSem1\bin\Debug\net6.0\HomeworkSem1.pdb
+C:\Users\Александр\OneDrive\Рабочий стол\C#Sem\HomeworkSem1\obj\Debug\net6.0\HomeworkSem1.dll
+C:\Users\Александр\OneDrive\Рабочий стол\C#Sem\HomeworkSem1\obj\Debug\net6.0\refint\HomeworkSem1.dll
+C:\Users\Александр\OneDrive\Рабочий стол\C#Sem\HomeworkSem1\obj\Debug\net6.0\HomeworkSem1.pdb
+C:\Users\Александр\OneDrive\Рабочий стол\C#Sem\HomeworkSem1\obj\Debug\net6.0\HomeworkSem1.genruntimeconfig.cache
+C:\Users\Александр\OneDrive\Рабочий стол\C#Sem\HomeworkSem1\obj\Debug\net6.0\ref\HomeworkSem1.dll
