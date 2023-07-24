@@ -55,6 +55,27 @@
 // }
 // Console.WriteLine(max);
 
+// или
+
+// Console.Write("Введите первое число: ");
+// int OneNumber = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите второе число: ");
+// int TwoNumber = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите третье число: ");
+// int ThreeNumber = Convert.ToInt32(Console.ReadLine());
+
+// int max=OneNumber;
+
+// if(OneNumber < TwoNumber)
+// {
+//     max=TwoNumber;
+// }
+// else if(max < ThreeNumber)
+// {
+//    max=ThreeNumber;
+// }
+// Console.Write(max);
+
 
 // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 // 4 -> да
