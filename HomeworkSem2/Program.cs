@@ -21,25 +21,23 @@
 int num = new Random().Next(10, 40000);
 Console.WriteLine(num);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-if(num > 999)
+if(num < 100)
 {
-    num / 10 % 10;
+    Console.WriteLine("Третьей цифры нет");
+}
+else if(num > 99 && num < 1000)
+{
+    num = num % 10;
     Console.WriteLine(num);
 }
-else if(num < 100)
+else if(num > 999 && num < 10000)
 {
-    Console.WriteLine(" Третьей цифры нет");
+    num = num / 10 % 10;
+    Console.WriteLine(num);
 }
+else if(num > 9999 && num <40000)
+{
+    num = num / 100 % 10;
+    Console.WriteLine(num);
+}
+
