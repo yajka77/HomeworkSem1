@@ -18,7 +18,7 @@
 // }
 // else if(num1 == num2)
 // {
-//     Console.WriteLine("Числа равны");
+//     Console.WriteLine("Числа равны"); // 
 // }
 // else
 // {
