@@ -18,26 +18,66 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-int num = new Random().Next(10, 40000);
+// int num = new Random().Next(10, 40000);
+// Console.WriteLine(num);
+
+// if(num < 100)
+// {
+//     Console.WriteLine("Третьей цифры нет");
+// }
+// else if(num > 99 && num < 1000)
+// {
+//     num = num % 10;
+//     Console.WriteLine(num);
+// }
+// else if(num > 999 && num < 10000)
+// {
+//     num = num / 10 % 10;
+//     Console.WriteLine(num);
+// }
+// else if(num > 9999 && num <40000)
+// {
+//     num = num / 100 % 10;
+//     Console.WriteLine(num);
+// }
+
+// Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+// 6 -> да
+// 7 -> да
+// 1 -> нет
+
+int num = new Random().Next(0, 10);
 Console.WriteLine(num);
 
-if(num < 100)
+if(num == 1)
 {
-    Console.WriteLine("Третьей цифры нет");
+    Console.WriteLine("Понедельник - рабочий день");
 }
-else if(num > 99 && num < 1000)
+else if(num == 2)
 {
-    num = num % 10;
-    Console.WriteLine(num);
+    Console.WriteLine("Вторник - рабочий день");
 }
-else if(num > 999 && num < 10000)
+else if(num == 3)
 {
-    num = num / 10 % 10;
-    Console.WriteLine(num);
+    Console.WriteLine("Среда - рабочий день");
 }
-else if(num > 9999 && num <40000)
+else if(num == 4)
 {
-    num = num / 100 % 10;
-    Console.WriteLine(num);
+    Console.WriteLine("Четверг - рабочий день");
 }
-
+else if(num == 5)
+{
+    Console.WriteLine("Пятница - рабочий день");
+}
+else if(num == 6)
+{
+    Console.WriteLine("Суббота - выходной");
+}
+else if(num == 7)
+{
+    Console.WriteLine("Воскресенье - выходной");
+}
+else
+{
+    Console.WriteLine("Такого дня нет");
+}
