@@ -52,8 +52,8 @@
 Console.WriteLine("Введите число");
 int num = Convert.ToInt32(Console.ReadLine());
 
-for(int i = 1; i <= num; i++);
-Console.WriteLine(Math.Pow(i, 3));
-
-
-
+for(int i = 1; i <= num; i++)
+{
+    double s = Math.Pow(i, 3);
+    Console.WriteLine(s);
+}
