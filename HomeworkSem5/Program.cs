@@ -52,20 +52,26 @@
 // разницу между максимальным и минимальным элементов массива.
 // [3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
 
-double[] array = new double[5.45, 7.62, 2.46, 3.23, 8.87];
+double[] array = new double[5];
 
-double max = array[i];
-double min = array[i];
+double maxNum = double.MinValue;   
+double minNum = double.MaxValue;   
+
 for (int i = 0; i < array.Length; i++)
 {
-    if (i > i + 1)
+    array[i]= (new Random().NextDouble()+ new Random().Next(10,90));
+    System.Console.Write( array[i]+ " ");
+
+
+    if (array[i] > maxNum)
     {
-        i = max;
+        maxNum=array[i];
     }
-    else if (i < i + 1)
+    if (array[i]< minNum)
     {
-        i = min;
+        minNum=array[i];
     }
 }
-double result = max[i] - min[i];
-System.Console.WriteLine(result);
+System.Console.WriteLine("Мак. ="+maxNum+ "Мин.= "+ minNum );
+double result = maxNum - minNum;
+System.Console.WriteLine("Сумма = "+ result);
