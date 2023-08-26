@@ -1,0 +1,55 @@
+﻿// Задача 50. Напишите программу, которая на вход принимает
+// позиции элемента в двумерном массиве, и возвращает
+// значение этого элемента или же указание, что такого
+// элемента нет.
+
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// 17->такого числа в массиве нет
+
+int[,] matrix = new int[5,6]; 
+ 
+for (int i = 0; i < matrix.GetLength(0); i++) 
+{ 
+    for (int j = 0; j < matrix.GetLength(1); j++) 
+    { 
+        matrix[i,j] = new Random().Next(0,10); 
+        Console.Write(matrix[i,j]+" "); 
+    } 
+    System.Console.WriteLine(); 
+} 
+System.Console.WriteLine(); 
+ 
+System.Console.WriteLine("Введие номер строки"); 
+int rows = Convert.ToInt32(Console.ReadLine()); 
+ 
+if (rows >= 0 && rows < 6) 
+{ 
+    System.Console.WriteLine("Введие номер столбца"); 
+    int colomns = Convert.ToInt32(Console.ReadLine()); 
+ 
+    if (colomns >= 0 && colomns < 7) 
+    { 
+        for (int i = 0; i < matrix.GetLength(0); i++) 
+        { 
+            for (int j = 0; j < matrix.GetLength(1); j++) 
+            { 
+                if (i == rows && j == colomns) 
+                { 
+                    Console.Write($"Найденое число {matrix[i,j]}"); 
+ 
+                } 
+            } 
+        } 
+    } 
+    else 
+    { 
+        System.Console.WriteLine("Такого номера столбца в массиве нет"); 
+    } 
+} 
+else 
+{ 
+    System.Console.WriteLine("Такого номера строки в массиве нет"); 
+}
