@@ -10,7 +10,7 @@
 // 17->такого числа в массиве нет
 
 // int[,] matrix = new int[5,6]; 
- 
+
 // for (int i = 0; i < matrix.GetLength(0); i++) 
 // { 
 //     for (int j = 0; j < matrix.GetLength(1); j++) 
@@ -21,15 +21,15 @@
 //     System.Console.WriteLine(); 
 // } 
 // System.Console.WriteLine(); 
- 
+
 // System.Console.WriteLine("Введие номер строки"); 
 // int rows = Convert.ToInt32(Console.ReadLine()); 
- 
+
 // if (rows >= 0 && rows < 6) 
 // { 
 //     System.Console.WriteLine("Введие номер столбца"); 
 //     int colomns = Convert.ToInt32(Console.ReadLine()); 
- 
+
 //     if (colomns >= 0 && colomns < 7) 
 //     { 
 //         for (int i = 0; i < matrix.GetLength(0); i++) 
@@ -39,7 +39,7 @@
 //                 if (i == rows && j == colomns) 
 //                 { 
 //                     Console.Write($"Найденое число {matrix[i,j]}"); 
- 
+
 //                 } 
 //             } 
 //         } 
@@ -62,20 +62,60 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
+// System.Console.WriteLine("Введите количество строк массива");
+// int rows =Convert.ToInt32(Console.ReadLine());
+
+// System.Console.WriteLine("Введите количество столбцов массива");
+// int colomns =Convert.ToInt32(Console.ReadLine());
+
+// double [,] matrix = new double[rows, colomns];
+
+// for (int i = 0; i < matrix.GetLength(0); i++)
+// {
+//     for (int j = 0; j < matrix.GetLength(1); j++)
+//     {
+//         matrix[i,j] = new Random().NextDouble()*10;
+//         Console.Write(matrix[i,j]+ " ");
+//     }
+//     Console.WriteLine();
+// }
+
+// Задача 52. Задайте двумерный массив из целых чисел.
+// Найдите среднее арифметическое элементов в каждом столбце.
+
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
+
 System.Console.WriteLine("Введите количество строк массива");
-int rows =Convert.ToInt32(Console.ReadLine());
+int rows = Convert.ToInt32(Console.ReadLine());
 
 System.Console.WriteLine("Введите количество столбцов массива");
-int colomns =Convert.ToInt32(Console.ReadLine());
+int colomns = Convert.ToInt32(Console.ReadLine());
 
-double [,] matrix = new double[rows, colomns];
+int[,] matrix = new int[rows, colomns];
 
 for (int i = 0; i < matrix.GetLength(0); i++)
 {
     for (int j = 0; j < matrix.GetLength(1); j++)
     {
-        matrix[i,j] = new Random().NextDouble()*10;
-        Console.Write(matrix[i,j]+ " ");
+        matrix[i, j] = new Random().Next(0, 10);
+        Console.Write(matrix[i, j] + " ");
     }
     Console.WriteLine();
+}
+
+int sum = 0;
+double average = 0;
+for (int j = 0; j < matrix.GetLength(1); j++)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        sum += matrix[i, j];
+    }
+    average = (double)sum / rows;
+    System.Console.WriteLine($"Среднее арифметическое столбца {j} равно {average}");
+    sum = 0;
 }
